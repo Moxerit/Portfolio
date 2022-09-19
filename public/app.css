@@ -1,0 +1,26 @@
+body {
+  background: url("../public/images/bg.jpg") no-repeat center center fixed !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.css-onkibi {
+  color: #c1292e !important;
+  border: #c1292e !important;
+  line-height: 30px !important;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.css-1ieeump {
+
+  background: #141D24 !important;
+  
+}
+
+.css-1ye12qe:active, .css-1ye12qe[data-active] {
+  background: #141D24 !important;
+  border: 2px dotted #c1292e !important;
+}

@@ -1,0 +1,30 @@
+Moxerit's Homepage
+https://www.moxerit.com/
+
+I wanted to test how I can implement my own custom smart contract and 3D models for both three.js and onsite minting with web3 authentication for site access to certain areas. Additionally it is to provide a different template for others to use or learn from in their own web development journey.
+
+## Stack
+- Next.js - A React framework with hybrid static & server rendering, and route pre-fetching, etc.
+  - Next.js Authentication - Next.js library for user authentication
+- Chakra UI - A simple, modular and accessible component library for React
+- Three.js - 3D library for JavaScript
+- Framer Motion - An animation library for React
+- Ethers.js - Javascript library to interact with the Ethereum or EVM compatible blockchains
+- Hardhat - Ethereum development environment for compiling, testing, and deploying smart contracts
+- Moralis - Web3 development and blockchain API provider
+- ThirdWeb - Web3 SDK for NFT smart contract deployment, minting, and management
+- License
+
+## MIT License.
+
+You can create your own homepage for free without notifying me by forking this project under the following conditions:
+
+Add a link to
+ - [My site](https://www.moxerit.com/)
+
+   or
+
+- [This repo](https://github.com/Moxerit/mox-portfolio)
+
+Please do not take ownership of my model, please check out making your own with Blender!
+Check out LICENSE for more detail.
