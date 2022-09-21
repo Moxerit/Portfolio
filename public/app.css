@@ -24,3 +24,7 @@ body {
   background: #141D24 !important;
   border: 2px dotted #c1292e !important;
 }
+
+.highlight {
+  background: #141D00 !important;
+}

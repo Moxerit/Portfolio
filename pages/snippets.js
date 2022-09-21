@@ -3,7 +3,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 <link rel="stylesheet" href="/path/to/styles/default.min.css" />
-
+import Highlight from 'react-highlight'
 
 const Snippets = () => (
   <Layout title="Works">
@@ -18,7 +18,9 @@ const Snippets = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.1}>
           <WorkGridItem pb={2} id="dystopia" title="Dystopia">
-            <div className='code'>{"example"}   </div>
+            <Highlight className="highlight">
+              grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            </Highlight>
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
