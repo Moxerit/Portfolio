@@ -64,14 +64,14 @@ const Navbar = props => {
           display={{ base: 'none', lg: 'flex' }}
           width={{ base: 'full', lg: 'auto' }}
           alignItems="center"
-          justify="space-between"
+          justify="flex-end"
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
           <Logo pr={0} color="#c1292e" />
           
           <LinkItem
-           _hover={{textDecoration: "none !important", }} bg="none" m={3} pr={8} letterSpacing={1.4} fontWeight={'bold'}  href="/" path={path}>
+           _hover={{textDecoration: "none !important", }} bg="none" pr={6}  letterSpacing={1.4} fontWeight={'bold'}  href="/" path={path}>
           Chase A.
           </LinkItem>
 
@@ -93,7 +93,7 @@ const Navbar = props => {
             <IoLogoGithub />
             Source
           </LinkItem>
-          <LinkItem _hover={{textDecoration: "none !important", background: "#c1292e", textColor: "#141D24"  }}  bg={"#FCF7F8"} borderRadius={"25px"}  href="/connect" path={path}>
+          <LinkItem _hover={{textDecoration: "none !important", background: "#c1292e", textColor: "#141D24"  }}  border={"2px solid #c1292e"} borderRadius={"25px"}  href="/connect" path={path}>
             Connect
           </LinkItem>
         </Stack>
