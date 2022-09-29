@@ -102,4 +102,3 @@ if(_mintAmount <= batchSize) {
 )
 
 export default Snippets
-export { getServerSideProps } from '../components/chakra'
