@@ -1,8 +1,8 @@
 import Layout from "../components/layouts/main";
 import Chakra from '../components/chakra'
-import Fonts from '../components/fonts'
-import '../node_modules/highlight.js/styles/default.css'
 
+import '../node_modules/highlight.js/styles/default.css'
+import '../public/globals.css'
 import '../public/app.css'
 
 const Website = ({ Component, pageProps, router }) => {
