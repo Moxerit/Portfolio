@@ -22,12 +22,12 @@ import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
-  const inactiveColor = useColorModeValue('#c1292e', '#c1292e')
+  const inactiveColor = useColorModeValue('#A82428', '#A82428')
   return (
     <NextLink href={href} passHref scroll={false}>
       <Link
         p={2}
-        bg={active ? '#c1292e;' : undefined}
+        bg={active ? '#A82428;' : undefined}
         color={active ? '#141D24' : inactiveColor}
         target={target}
         {...props}
@@ -48,7 +48,7 @@ const Navbar = props => {
       as="nav"
       width="60vw"
       mx="auto"
-      bg={useColorModeValue('#c1292e', '#141D24')}
+      bg={useColorModeValue('#A82428', '#141D24')}
       zIndex={2}
       {...props}
     >
@@ -68,10 +68,10 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <Logo pr={0} color="#c1292e" />
+          <Logo pr={0} color="#A82428" />
           
           <LinkItem
-           _hover={{textDecoration: "none !important", }} bg="none" pr={6}  letterSpacing={1.4} fontWeight={'bold'}  href="/" path={path}>
+           _hover={{textDecoration: "none !important", }} bg="none" pr={6} color="#A82428"  letterSpacing={1.4} fontWeight={'bold'}  href="/" path={path}>
           Chase A.
           </LinkItem>
 
@@ -83,7 +83,7 @@ const Navbar = props => {
           </LinkItem>
           <LinkItem
             target="_blank"
-            href="https://github.com/craftzdog/craftzdog-homepage"
+            href="https://github.com/moxerit"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -93,7 +93,7 @@ const Navbar = props => {
             <IoLogoGithub />
             Source
           </LinkItem>
-          <LinkItem _hover={{textDecoration: "none !important", background: "#c1292e", textColor: "#141D24"  }}  border={"2px solid #c1292e"} borderRadius={"25px"}  href="/connect" path={path}>
+          <LinkItem _hover={{textDecoration: "none !important", background: "#A82428", textColor: "#141D24"  }}  border={"2px solid #A82428"} borderRadius={"25px"}  href="/connect" path={path}>
             Connect
           </LinkItem>
         </Stack>
@@ -101,16 +101,16 @@ const Navbar = props => {
         <Box flex={1} p={2}  align="middle">
           {/* <ThemeToggleButton /> */}
 
-          <Box color="#c1292e" w="100%" justify-content="center" display={{ base: 'inline-block', lg: 'none' }}>
+          <Box color="#A82428" w="100%" justify-content="center" display={{ base: 'inline-block', lg: 'none' }}>
             <Menu isLazy id="navbar-menu" >
               <MenuButton
 
                 _hover={{
-                  border: "3px dotted #c1292e !important",
+                  border: "3px dotted #A82428 !important",
                 }}
                 _active={{
                   background:"#141D24 !important",
-                  border: "3px solid #c1292e !important",
+                  border: "3px solid #A82428 !important",
                 }}
                 
                 border="3px dotted #141D24 !important"

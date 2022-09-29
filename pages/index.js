@@ -28,17 +28,6 @@ const Page = () => {
           production ready projects on his own or as part of a team. Outside his work online
           he can be found slinging dries on the Missouri river or hiking through
           Glacier park. 
-
-        <Box
-          mb={3}
-          mt={6}
-          
-        >
-          
-          To access his solidity snippets please mint the FREE Rinkeby testnet NFT. This is my own "captcha" to prevent spam or unfamilar recruiters for web3. Instructions will still be provided and I encourage
-          you to contact me if you need any help or explaination of the process.
-        </Box>
-
           
       </Box>
       

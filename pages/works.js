@@ -8,6 +8,8 @@ import prevDystopia from '../public/images/dystopia.png'
 import dyscontract from '../public/images/dystcontract.png'
 import remcontract from '../public/images/remcontract.png'
 import seattle from '../public/images/Seattle_toy1.png'
+import helmet from '../public/images/helmet.png'
+import nftscroller from '../public/images/nftscoller.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -26,9 +28,8 @@ const Works = () => (
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
-          <WorkGridItem pb={2} id="nft-explorer" title="NFT Explorer">
-            Next.js converted DAPP to be used for viewing NFTs on the Ethereum blockchain. Updated with a new node provider (Alchemy) and improved
-            load times / fetching. Additionally, updated to include testnets (Rinkeby, Kovan, Ropsten, Goerli), typescript, and improved UI for better user feedback. 
+          <WorkGridItem pb={2} id="nft-scroller" title="NFT-Scroller" thumbnail={nftscroller}>
+            Alchemy demo DAPP for searching NFTs of wallets with the addition of selecting NFT contract address specifically. Updated for faster API fetching, bug fix for API fetch error, and refactored TailwindCSS.
           </WorkGridItem>
         </Section>
         <Section delay={0.3}>
@@ -79,14 +80,12 @@ const Works = () => (
         <Section delay={0.1}>
           <WorkGridItem pb={2} id="seattle" title="Seattle Space Needle" thumbnail={seattle}>
             One of my favorite pieces I have made. I mainly have done models only, but have worked on renders like re-creating a toy in plastic like seen here. You can mint one for free and have access to my 
-            snippets AND the files for the 3D model! 
+            3D files for free. (work in progress, migrating to testnet)
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
-          <WorkGridItem pb={2} id="dystopia" title="Dystopia">
-            Homebrewed NFT project focused on enviornmental depictions of a bleak outlook using stylized renders 
-            of our self made assets and characters. Utilizing ERC721A which was integrated during development when it was
-            released and merkle tree whitelisting with incremental minting.
+          <WorkGridItem pb={2} id="gueira" title="Gueira's Helmet" thumbnail={helmet}>
+            Comissioned piece of Gueira from Made in Abyss for his helmet. Fully ready to print, wear, and use with LEDs. 
           </WorkGridItem>
         </Section>
       </SimpleGrid>

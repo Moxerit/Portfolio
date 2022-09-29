@@ -8,7 +8,7 @@ const LogoBox = styled.span`
   display: inline-flex;
   align-items: center;
   padding: 10px 0px 10px 10px;
-  color: #c1292e !important;
+  color: #A82428 !important;
   gap: 0;
   > svg {
     transition: 200ms ease;
