@@ -22,6 +22,7 @@ const Page = () => {
         >
           Chase Alber
         </Box>
+        (WEBSITE WORK IN PROGRESS, FAMILY EMERGENCY)
           Chase is a 3D modeler, solidity auditor, and full-stack developer located
           out in the mountains of Montana. His interest spans wide and enjoys being able
           to contribute to any part of a project as he is capable of delivering
