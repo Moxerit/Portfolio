@@ -9,7 +9,6 @@ const Website = ({ Component, pageProps, router }) => {
   return (
     
     <Chakra cookiers={pageProps.cookies}>
-      <Fonts />
       <Layout router={router}>
         <Component {...pageProps} key={router.route}/>
       </Layout>
