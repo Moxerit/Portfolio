@@ -4,12 +4,14 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import React from 'react'
 
-import prevDystopia from '../public/images/dystopia.PNG'
+import prevDystopia from '../public/images/dys.png'
 import dyscontract from '../public/images/dystcontract.PNG'
 import remcontract from '../public/images/remcontract.PNG'
 import seattle from '../public/images/Seattle_toy1.png'
 import helmet from '../public/images/helmet.png'
-import nftscroller from '../public/images/nftscoller.PNG'
+import nftscroller from '../public/images/nftscroller.PNG'
+import mbd from '../public/images/mbd.PNG'
+import car from '../public/images/car.PNG'
 
 const Works = () => (
   <Layout title="Works">
@@ -21,28 +23,27 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.1}>
-          <WorkGridItem pb={2} id="dystopia" title="Dystopia" thumbnail={prevDystopia}>
+          <WorkGridItem pb={2} id="dystopia" title="Dystopia" thumbnail={prevDystopia} >
             Homebrewed NFT project focused on enviornmental depictions of a bleak outlook using stylized renders 
             of our self made assets and characters. Utilizing ERC721A which was integrated during development when it was
             released and merkle tree whitelisting with incremental minting.
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
-          <WorkGridItem pb={2} id="nft-scroller" title="NFT-Scroller" thumbnail={nftscroller}>
-            Alchemy demo DAPP for searching NFTs of wallets with the addition of selecting NFT contract address specifically. Updated for faster API fetching, bug fix for API fetch error, and refactored TailwindCSS.
+          <WorkGridItem pb={2} id="dashboard" title="Moby-Dashboard" thumbnail={mbd}>
+            "Whale Watching" dashboard for tracking transactions of the biggest wallets in Ethereum. Open source and free to use, project is ongoing to provide accessibile tools for the community. 
           </WorkGridItem>
         </Section>
         <Section delay={0.3}>
-          <WorkGridItem pb={2} id="car-chain" title="Car Rental Dapp">
+          <WorkGridItem pb={2} id="car-chain" title="Car Rental Dapp" thumbnail={car}>
             Dapp utiziling renting, depositing, and loaning for renting cars porotype. This is currently using the Avalanche Fuji testnet alongside Chakra UI for
             improved UX. Capable of allowing users to create a profile attached to their wallet address (Metamask) and page restrictions to redirect users for registering, renting,
             or depositing depending on their profile state. Created as a template for others to implement with their own contracts and testnets if desired.
           </WorkGridItem>
         </Section>
-        <Section delay={0.3}>
-          <WorkGridItem pb={2} id="nft-auth" title="NFT Authenticator">
-            NFT authenticator to allow users to verify ownership to obtain access to pages or websites for exclusive content. Set up for any testnets and currently using Ethereum Rinkeby for testing purposes. Uses Moralis 
-            API for verification and Next.js authentication for user assigned token access to manage membership.
+        <Section delay={0.1}>
+          <WorkGridItem pb={2} id="nft-scroller" title="NFT-Scroller" thumbnail={nftscroller}>
+            Alchemy demo DAPP for searching NFTs of wallets with the addition of selecting NFT contract address specifically. Updated for faster API fetching, bug fix for API fetch error, and refactored TailwindCSS.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
@@ -80,7 +81,7 @@ const Works = () => (
         <Section delay={0.1}>
           <WorkGridItem pb={2} id="seattle" title="Seattle Space Needle" thumbnail={seattle}>
             One of my favorite pieces I have made. I mainly have done models only, but have worked on renders like re-creating a toy in plastic like seen here. You can mint one for free and have access to my 
-            3D files for free. (work in progress, migrating to testnet)
+            3D files for free. (work in progress, migrating to testnet for free mints)
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>

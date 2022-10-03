@@ -46,7 +46,7 @@ const Navbar = props => {
       mt={10}
       borderRadius="25px"
       as="nav"
-      width="60vw"
+      width="50vw"
       mx="auto"
       bg={useColorModeValue('#A82428', '#141D24')}
       zIndex={2}
@@ -93,9 +93,9 @@ const Navbar = props => {
             <IoLogoGithub />
             Source
           </LinkItem>
-          <LinkItem _hover={{textDecoration: "none !important", background: "#A82428", textColor: "#141D24"  }}  border={"2px solid #A82428"} borderRadius={"25px"}  href="/connect" path={path}>
+          {/* <LinkItem _hover={{textDecoration: "none !important", background: "#A82428", textColor: "#141D24"  }}  border={"2px solid #A82428"} borderRadius={"25px"}  href="/connect" path={path}>
             Connect
-          </LinkItem>
+          </LinkItem> */}
         </Stack>
 
         <Box flex={1} p={2}  align="middle">

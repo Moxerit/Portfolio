@@ -21,7 +21,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 )
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => (
-  <Box  w="100%" textAlign="center">
+  <Box w="100%" textAlign="center">
       <LinkBox>
         <Image
           src={thumbnail}
@@ -40,7 +40,7 @@ export const GridItemStyle = () => (
   <Global
     styles={`
       .grid-item-thumbnail {
-        border-radius: 12px;
+        border-radius: 8px;
       }
     `}
   />
