@@ -5,19 +5,14 @@ import {
   Box,
   Link,
   Stack,
-  Heading,
-  Flex,
   Menu,
   MenuItem,
   MenuList,
   MenuButton,
   IconButton,
   useColorModeValue,
-  Button
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import { FinnTheHuman } from 'phosphor-react'
-// import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
