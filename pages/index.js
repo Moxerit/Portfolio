@@ -4,10 +4,6 @@ import {
   Avatar
 } from '@chakra-ui/react'
 
-
-
-
-
 const Page = () => {
   
   return (
