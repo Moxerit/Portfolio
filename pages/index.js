@@ -21,7 +21,7 @@ const Page = () => {
         mt={3}
         >
           <Avatar display={{base: 'none', md : 'flex'}} background="#141D24" p={1} mr={3} size='xxl' name='Chase Alber' src="https://i.imgur.com/zMLrNyP.jpeg" />
-          Chase is a 3D modeler, solidity auditor, and full-stack developer located
+          Chase is a 3D modeler, solidity wizard, and full-stack developer located
           out in the mountains of Montana. His interest spans wide and enjoys being able
           to contribute to any part of a project, delivering
           production ready projects on his own or as part of a team. Outside his work online
