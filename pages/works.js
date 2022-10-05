@@ -16,8 +16,8 @@ import car from '../public/images/car.PNG'
 const Works = () => (
   <Layout title="Works">
     <Container  minW="70vw">
-    <Box borderRadius="lg" bg="#141D24" p={10} w={"100%"} mh={"50vh"} mt={36} align="center">  
-      <Heading as="h3" fontSize={24} mb={4}>
+    <Box borderRadius="25px" bg="#141D24" p={10} w={"100%"} mh={"50vh"} mt={36} align="center">  
+      <Heading as="h2" fontSize={36} mb={10}>
         Works
       </Heading>
 

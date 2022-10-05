@@ -1,5 +1,6 @@
 import NextLink from 'next/link'
 import Logo from './logo'
+import Layout from '../components/layouts/article'
 import {
   Container,
   Box,

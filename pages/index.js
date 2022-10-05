@@ -1,3 +1,4 @@
+import Layout from '../components/layouts/article'
 import {
   Container,
   Box,
@@ -7,6 +8,7 @@ import {
 const Page = () => {
   
   return (
+    <Layout>
     <Container minW="70vw">
       <Box borderRadius="lg" bg="#141D24" p={10} w={"100%"} mh={"30vh"} mt={36} align="center">
         <Box 
@@ -33,6 +35,7 @@ const Page = () => {
       
       
     </Container>
+    </Layout>
   )
 }
 
