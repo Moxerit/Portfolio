@@ -36,7 +36,7 @@ const Works = () => (
         </Section>
         <Section delay={0.3}>
           <WorkGridItem pb={2} id="car-chain" title="Car Rental Dapp" thumbnail={car}>
-            Dapp utiziling renting, depositing, and loaning for renting cars porotype. This is currently using the Avalanche Fuji testnet alongside Chakra UI for
+            Dapp utiziling renting, depositing, and loaning for renting cars prototype. This is currently using the Avalanche Fuji testnet alongside Chakra UI for
             improved UX. Capable of allowing users to create a profile attached to their wallet address (Metamask) and page restrictions to redirect users for registering, renting,
             or depositing depending on their profile state. Created as a template for others to implement with their own contracts and testnets if desired.
           </WorkGridItem>
