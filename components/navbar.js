@@ -24,7 +24,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       <Link
         p={2}
         bg={active ? '#A82428;' : undefined}
-        color={active ? '#141D24' : inactiveColor}
+        color={active ? '#0e151a' : inactiveColor}
         target={target}
         {...props}
       >
@@ -44,7 +44,7 @@ const Navbar = props => {
       as="nav"
       width="50vw"
       mx="auto"
-      bg={useColorModeValue('#A82428', '#141D24')}
+      bg={useColorModeValue('#A82428', '#0e151a')}
       zIndex={2}
       {...props}
     >
@@ -89,7 +89,7 @@ const Navbar = props => {
             <IoLogoGithub />
             Source
           </LinkItem>
-          {/* <LinkItem _hover={{textDecoration: "none !important", background: "#A82428", textColor: "#141D24"  }}  border={"2px solid #A82428"} borderRadius={"25px"}  href="/connect" path={path}>
+          {/* <LinkItem _hover={{textDecoration: "none !important", background: "#A82428", textColor: "#0e151a"  }}  border={"2px solid #A82428"} borderRadius={"25px"}  href="/connect" path={path}>
             Connect
           </LinkItem> */}
         </Stack>
@@ -105,11 +105,11 @@ const Navbar = props => {
                   border: "3px dotted #A82428 !important",
                 }}
                 _active={{
-                  background:"#141D24 !important",
+                  background:"#0e151a !important",
                   border: "3px solid #A82428 !important",
                 }}
                 
-                border="3px dotted #141D24 !important"
+                border="3px dotted #0e151a !important"
                 p={6}
                 borderRadius="25px"
                 width={"100%"}
