@@ -5,4 +5,5 @@
   font-style: normal;
   font-weight: 400;
   src: local('Monaco'), url('https://fonts.cdnfonts.com/s/14106/Monaco.woff') format('woff');
+  font-display: swap;
 }
