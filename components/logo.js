@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Text, useColorModeValue } from '@chakra-ui/react'
 import { FinnTheHuman } from 'phosphor-react'
 import styled from '@emotion/styled'
 

@@ -7,7 +7,7 @@ const FinnIcon = props => {
     viewBox="0 0 40 40"
     fill="currentColor"
     {...props}
-    xmlns="https://www.w3.org/2000/svg">
+    xmlns="http://www.w3.org/2000/svg">
       <rect width="256" height="256" fill="none"></rect>
       <rect x="56" y="104" width="144" height="72" rx="32" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect>
       <path d="M24,64a24,24,0,0,1,48,0H184a24,24,0,0,1,48,0v80a64.1,64.1,0,0,1-64,64H88a64.1,64.1,0,0,1-64-64Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>

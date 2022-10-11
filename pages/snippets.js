@@ -1,7 +1,7 @@
-import { Container, Heading, SimpleGrid, Box, Text } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Divider, Box, Text } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-
+import { WorkGridItem } from '../components/grid-item'
 import Highlight from 'react-highlight'
 <link rel="stylesheet" href="/path/to/styles/default.min.css" />
 
@@ -14,43 +14,12 @@ const Snippets = () => (
     hljs.highlightAll();
 </script>
     <Container minW="70vw">
-    <Box borderRadius="25px"  bg="#141D24" p={10} w={"100%"} mh={"50vh"} mt={36} align="center">  
-      <Heading as="h2" fontSize={36} mb={5}>
+    <Box borderRadius="lg" bg="#141D24" p={10} w={"100%"} mh={"50vh"} mt={36} align="center">  
+      <Heading as="h3" fontSize={24} mb={4}>
         Code Snippets
       </Heading>
 
-      <SimpleGrid mt={4} columns={[1, 1, 1]} gap={16}>
-      <Section  delay={0.1}>
-          <Box w="100%">
-          <Text textColor={'#A82428'} my={2} fontSize={20}>
-            Deploy Cairo testnet-contract with Protostar snippet
-          </Text>
-            <Highlight   language="solidity" width="100%" className="css">
-              {
-`
-@mox time saving snippet for providing constructor input on Protostar test deploy
-
-protostar deploy build/ERC721_custom.json
- --network testnet --inputs
-  {name} {symbol} {address}
-
-
-
-@mox example constructor for the snippet
-
-func constructor{syscall_ptr: felt*, pedersen_ptr: HashBuiltin*, range_check_ptr}(
-    name: felt, symbol: felt, owner: felt
-) {
-    ERC721.initializer(name, symbol);
-    Ownable.initializer(owner);
-    last_tokenID.write(Uint256(0,0));
-    return ();
-}
-`}
-             
-            </Highlight>
-          </Box>
-        </Section>
+      <SimpleGrid columns={[1, 1, 1]} gap={6}>
         <Section delay={0.1}>
           <Box w="100%">
           <Text textColor={'#A82428'} my={2} fontSize={20}>

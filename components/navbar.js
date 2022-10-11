@@ -1,6 +1,5 @@
 import NextLink from 'next/link'
 import Logo from './logo'
-import Layout from '../components/layouts/article'
 import {
   Container,
   Box,
@@ -24,7 +23,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       <Link
         p={2}
         bg={active ? '#A82428;' : undefined}
-        color={active ? '#0e151a' : inactiveColor}
+        color={active ? '#141D24' : inactiveColor}
         target={target}
         {...props}
       >
@@ -44,7 +43,7 @@ const Navbar = props => {
       as="nav"
       width="50vw"
       mx="auto"
-      bg={useColorModeValue('#A82428', '#0e151a')}
+      bg={useColorModeValue('#A82428', '#141D24')}
       zIndex={2}
       {...props}
     >
@@ -89,7 +88,7 @@ const Navbar = props => {
             <IoLogoGithub />
             Source
           </LinkItem>
-          {/* <LinkItem _hover={{textDecoration: "none !important", background: "#A82428", textColor: "#0e151a"  }}  border={"2px solid #A82428"} borderRadius={"25px"}  href="/connect" path={path}>
+          {/* <LinkItem _hover={{textDecoration: "none !important", background: "#A82428", textColor: "#141D24"  }}  border={"2px solid #A82428"} borderRadius={"25px"}  href="/connect" path={path}>
             Connect
           </LinkItem> */}
         </Stack>
@@ -105,11 +104,11 @@ const Navbar = props => {
                   border: "3px dotted #A82428 !important",
                 }}
                 _active={{
-                  background:"#0e151a !important",
+                  background:"#141D24 !important",
                   border: "3px solid #A82428 !important",
                 }}
                 
-                border="3px dotted #0e151a !important"
+                border="3px dotted #141D24 !important"
                 p={6}
                 borderRadius="25px"
                 width={"100%"}
@@ -120,18 +119,18 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/">
+                <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
-                <NextLink href="/works">
+                <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
-                <NextLink href="/posts">
+                <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
                 <MenuItem
                   as={Link}
-                  href="https://github.com/moxerit"
+                  href="https://github.com/craftzdog/craftzdog-homepage"
                 >
                   View Source
                 </MenuItem>

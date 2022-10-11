@@ -16,8 +16,8 @@ import car from '../public/images/car.PNG'
 const Works = () => (
   <Layout title="Works">
     <Container  minW="70vw">
-    <Box borderRadius="25px" bg="#0e151a" p={10} w={"100%"} mh={"50vh"} mt={36} align="center">  
-      <Heading as="h2" fontSize={36} mb={10}>
+    <Box borderRadius="lg" bg="#141D24" p={10} w={"100%"} mh={"50vh"} mt={36} align="center">  
+      <Heading as="h3" fontSize={24} mb={4}>
         Works
       </Heading>
 
@@ -36,7 +36,7 @@ const Works = () => (
         </Section>
         <Section delay={0.3}>
           <WorkGridItem pb={2} id="car-chain" title="Car Rental Dapp" thumbnail={car}>
-            Dapp utiziling renting, depositing, and loaning for renting cars prototype. This is currently using the Avalanche Fuji testnet alongside Chakra UI for
+            Dapp utiziling renting, depositing, and loaning for renting cars porotype. This is currently using the Avalanche Fuji testnet alongside Chakra UI for
             improved UX. Capable of allowing users to create a profile attached to their wallet address (Metamask) and page restrictions to redirect users for registering, renting,
             or depositing depending on their profile state. Created as a template for others to implement with their own contracts and testnets if desired.
           </WorkGridItem>
