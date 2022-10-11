@@ -1,43 +1,35 @@
 {
-  "name": "portfolio",
+  "name": "moxerit.com",
   "version": "1.0.0",
-  "description": "Moxerit's Homepage\r https://www.moxerit.com/",
-  "main": "next.config.js",
-  "directories": {
-    "lib": "lib"
-  },
+  "description": "Chase's website",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next",
+    "dev": "next dev -H 0.0.0.0",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prettier": "prettier --write .",
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Moxerit/Portfolio.git"
-  },
+  "keywords": [],
   "author": "Chase",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Moxerit/Portfolio/issues"
-  },
-  "homepage": "https://github.com/Moxerit/Portfolio#readme",
+  "license": "MIT",
   "dependencies": {
-    "@chakra-ui/avatar": "^2.1.0",
     "@chakra-ui/icons": "^2.0.8",
     "@chakra-ui/react": "^2.2.8",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
-    "eslint": "^8.24.0",
-    "eslint-config-next": "^12.3.1",
     "framer-motion": "^7.2.0",
     "highlight.js": "^11.6.0",
     "next": "^12.2.5",
     "phosphor-react": "^1.4.1",
-    "prettier": "^2.7.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-highlight": "^0.14.0",
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "three": "^0.143.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "eslint-config-next": "^12.2.5",
+    "prettier": "^2.7.1"
   }
 }
