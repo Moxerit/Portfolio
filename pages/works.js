@@ -14,10 +14,10 @@ import mbd from '../public/images/mbd.webp'
 import car from '../public/images/car.webp'
 
 const Works = () => (
-  <Layout title="Works">
-    <Container  minW="70vw">
-    <Box borderRadius="lg" bg="#141D24" p={10} w={"100%"} mh={"50vh"} mt={36} align="center">  
-      <Heading as="h3" fontSize={24} mb={4}>
+  <Layout  title="Works">
+    <Container  minW="80vw">
+    <Box borderRadius="lg" bg="#0e151a" p={10} w={"100%"} mh={"50vh"} mt={36} align="center">  
+      <Heading as="h3" fontSize={36} mb={8}>
         Works
       </Heading>
 

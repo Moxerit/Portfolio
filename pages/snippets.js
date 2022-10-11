@@ -14,15 +14,41 @@ const Snippets = () => (
     hljs.highlightAll();
 </script>
     <Container minW="70vw">
-    <Box borderRadius="lg" bg="#141D24" p={10} w={"100%"} mh={"50vh"} mt={36} align="center">  
-      <Heading as="h3" fontSize={24} mb={4}>
+    <Box borderRadius="lg" bg="#0e151a" p={10} w={"100%"} mh={"50vh"} mt={36} align="center">  
+      <Heading as="h3" fontSize={36} mb={8}>
         Code Snippets
       </Heading>
 
       <SimpleGrid columns={[1, 1, 1]} gap={6}>
+      <Section  delay={0.1}>
+          <Box w="100%">
+          <Text textColor={'#A82428'} my={5} fontSize={20}>
+            Deploy Cairo testnet-contract with Protostar snippet
+          </Text>
+            <Highlight   language="solidity" width="100%" className="css">
+              {
+`
+@mox time saving snippet for providing constructor input on Protostar test deploy
+protostar deploy build/ERC721_custom.json
+ --network testnet --inputs
+  {name} {symbol} {address}
+@mox example constructor for the snippet
+func constructor{syscall_ptr: felt*, pedersen_ptr: HashBuiltin*, range_check_ptr}(
+    name: felt, symbol: felt, owner: felt
+) {
+    ERC721.initializer(name, symbol);
+    Ownable.initializer(owner);
+    last_tokenID.write(Uint256(0,0));
+    return ();
+}
+`}
+             
+            </Highlight>
+          </Box>
+        </Section>
         <Section delay={0.1}>
           <Box w="100%">
-          <Text textColor={'#A82428'} my={2} fontSize={20}>
+          <Text textColor={'#A82428'} my={5} fontSize={20}>
             isSecured() - Modifier to prevent hostile contracts or exploits for minting.
           </Text>
             <Highlight language="solidity" width="100%" className="css">
@@ -38,7 +64,7 @@ _; }`}
         </Section>
         <Section delay={0.1}>
           <Box w="100%">
-          <Text textColor={'#A82428'} my={2} fontSize={20}>
+          <Text textColor={'#A82428'} my={5} fontSize={20}>
             Batch minting - Release supply over time using batch mints.
           </Text>
             <Highlight language="solidity" width="100%" className="css">
@@ -72,7 +98,7 @@ modifier mintCompliance(uint256 _mintAmount) {
         </Section>
         <Section delay={0.1}>
           <Box w="100%">
-          <Text textColor={'#A82428'} my={2} fontSize={20}>
+          <Text textColor={'#A82428'} my={5} fontSize={20}>
             Dynamic price - Function to check if price changes depending on mint amount.
           </Text>
             <Highlight language="solidity" width="100%" className="css">
