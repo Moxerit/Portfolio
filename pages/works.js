@@ -4,14 +4,14 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import React from 'react'
 
-import prevDystopia from '../public/images/dys.png'
-import dyscontract from '../public/images/dystcontract.PNG'
-import remcontract from '../public/images/remcontract.PNG'
-import seattle from '../public/images/Seattle_toy1.png'
-import helmet from '../public/images/helmet.png'
-import nftscroller from '../public/images/nftscroller.PNG'
-import mbd from '../public/images/mbd.PNG'
-import car from '../public/images/car.PNG'
+import prevDystopia from '../public/images/dys.webp'
+import dyscontract from '../public/images/dystcontract.webp'
+import remcontract from '../public/images/remcontract.webp'
+import seattle from '../public/images/Seattle_toy1.webp'
+import helmet from '../public/images/helmet.webp'
+import nftscroller from '../public/images/nftscroller.webp'
+import mbd from '../public/images/mbd.webp'
+import car from '../public/images/car.webp'
 
 const Works = () => (
   <Layout title="Works">
