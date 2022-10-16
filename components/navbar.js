@@ -1,4 +1,3 @@
-import NextLink from 'next/link'
 import Logo from './logo'
 import {
   Container,
@@ -19,8 +18,8 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('#A82428', '#A82428')
   return (
-    <NextLink href={href} passHref scroll={false}>
       <Link
+      href={href} passHref scroll={false}
         p={2}
         bg={active ? '#A82428;' : undefined}
         color={active ? '#0e151a' : inactiveColor}
@@ -29,7 +28,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       >
         {children}
       </Link>
-    </NextLink>
+
   )
 }
 
@@ -120,15 +119,15 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/" passHref>
+                <Link href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
-                <NextLink href="/works" passHref>
+                </Link>
+                <Link href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
-                </NextLink>
-                <NextLink href="/snippets" passHref>
+                </Link>
+                <Link href="/snippets" passHref>
                   <MenuItem as={Link}>Snippets</MenuItem>
-                </NextLink>
+                </Link>
                 <MenuItem
                   as={Link}
                   href="https://github.com/craftzdog/craftzdog-homepage"
