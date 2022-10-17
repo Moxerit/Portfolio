@@ -14,7 +14,7 @@ const Snippets = () => (
     hljs.highlightAll();
 </script>
     <Container minW="90vw">
-    <Box borderRadius="lg" bg="#0e151a" p={10} w={"100%"} mh={"50vh"} mt={[0, 6]} align="center">  
+    {/* <Box borderRadius="lg" bg="#0e151a" p={10} w={"100%"} mh={"50vh"} mt={[0, 6]} align="center">  
       <Heading as="h3" fontSize={[30, 48]} mb={{ base: 6}}>
         Code Snippets
       </Heading>
@@ -122,7 +122,7 @@ if(_mintAmount <= batchSize) {
           </Box>
         </Section>
       </SimpleGrid>
-    </Box>
+    </Box> */}
   </Container>
   </Layout>
 )
