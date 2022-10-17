@@ -22,16 +22,16 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   return (
     <NextLink href={href} passHref scroll={false}>
       <Link
-      href={href}
+      
         p={2}
-        bg={active ? '#A82428;' : undefined}
+        bg={active ? '#A82428' : undefined}
         color={active ? '#0e151a' : inactiveColor}
         target={target}
         {...props}
       >
         {children}
       </Link>
-      </NextLink>
+    </NextLink>
 
   )
 }
@@ -124,18 +124,18 @@ const Navbar = props => {
                 mb={0}
               />
               <MenuList>
-                <Link href="/" passHref>
+                <NextLink href="/" passHref>
                   <MenuItem as={Link}>Home</MenuItem>
-                </Link>
-                <Link href="/works" passHref>
+                </NextLink>
+                <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
-                </Link>
-                <Link href="/snippets" passHref>
+                </NextLink>
+                <NextLink href="/snippets" passHref>
                   <MenuItem as={Link}>Snippets</MenuItem>
-                </Link>
+                </NextLink>
                 <MenuItem
                   as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
+                  href="https://github.com/Moxerit/Portfolio"
                 >
                   View Source
                 </MenuItem>
