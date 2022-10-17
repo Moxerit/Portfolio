@@ -16,13 +16,13 @@ import car from '../public/images/car.webp'
 
 const Works = () => (
   <Layout title="Works" >
-    <Container minW="90vw" >
+    <Container minW="50vw" >
     <Box borderRadius="lg" bg="#0e151a" p={[6, 10]} w={"100%"} mh={"50vh"} mt={[0, 6]} align="center">  
       <Heading as="h3" fontSize={[30, 48]} mb={{ base: 6}}>
         Works
       </Heading>
 
-      <SimpleGrid columns={[1, 1, 1, 1, 2]} gap={6}>
+      <SimpleGrid columns={[1, 1, 1, 1, 1, 2]} gap={6}>
         <Section delay={0.1}>
           <WorkGridItem pb={2} id={dystopia} title="Dystopia.Earth" >
             Homebrewed NFT project focused on enviornmental depictions of a bleak outlook using stylized renders 
@@ -56,7 +56,7 @@ const Works = () => (
         </Heading>
       </Section>
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <SimpleGrid columns={[1, 1, 1, 1, 1, 2]} gap={6}>
         <Section delay={0.1}>
           <WorkGridItem pb={2} id={dyscontract} title="Dystopia Contract">
             Custom minting contract for Dystopia to allow these parameters: batch minting, batch release control (release NFTs in batches), merkle tree whitelisting, ERC721A (was implemented during development as it was released mid-way),
@@ -78,7 +78,7 @@ const Works = () => (
         </Heading>
       </Section>
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <SimpleGrid columns={[1, 1, 1, 1, 1, 2]} gap={6}>
         <Section delay={0.1}>
           <WorkGridItem pb={2} id={seattle} title="Seattle Space Needle">
             One of my favorite pieces I have made. I mainly have done models only, but have worked on renders like re-creating a toy in plastic like seen here. You can mint one for free and have access to my 

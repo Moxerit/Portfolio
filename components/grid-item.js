@@ -23,13 +23,13 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 )
 
 export const WorkGridItem = ({ children, id, title }) => (
-  <Box w="80%" textAlign="center">    
-          <Text textColor={'#A82428'} mt={{ base: 4, md: 8}} mb={6} fontSize={[24, 32, 32]}>
+  <Box w={[ "80%", "90%" ]} textAlign="center">    
+          <Text textColor={'#A82428'} mt={{ base: 4, md: 8}} mb={6} fontSize={[24, 22]}>
             {title}
           </Text>
           <Image placeholder="blur" src={id} className="grid-item-thumbnail"/>
         
-          <Text mt={5} fontSize={[14, 16, 16, 20, 24]}>
+          <Text mt={5} fontSize={[14]}>
           {children}
           </Text>
    
