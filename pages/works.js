@@ -17,7 +17,7 @@ import car from '../public/images/car.webp'
 const Works = () => (
   <Layout title="Works" >
     <Container minW="50vw" >
-    {/* <Box borderRadius="lg" bg="#0e151a" p={[6, 10]} w={"100%"} mh={"50vh"} mt={[0, 6]} align="center">  
+    <Box borderRadius="lg" bg="#0e151a" p={[6, 10]} w={"100%"} mh={"50vh"} mt={[0, 6]} align="center">  
       <Heading as="h3" fontSize={[30, 48]} mb={{ base: 6}}>
         Works
       </Heading>
@@ -93,7 +93,7 @@ const Works = () => (
       </SimpleGrid>
 
 
-    </Box> */}
+    </Box>
   </Container>
   </Layout>
 )

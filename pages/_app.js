@@ -2,9 +2,9 @@ import Layout from "../components/layouts/main";
 import Chakra from '../components/chakra'
 import { AnimatePresence } from 'framer-motion'
 
-// import '../node_modules/highlight.js/styles/default.css'
-// import '../public/globals.css'
-// import '../public/app.css'
+import '../node_modules/highlight.js/styles/default.css'
+import '../public/globals.css'
+import '../public/app.css'
 
 if (typeof window !== 'undefined') {
   window.history.scrollRestoration = 'manual'
