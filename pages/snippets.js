@@ -13,17 +13,17 @@ const Snippets = () => (
 <script type="text/javascript">
     hljs.highlightAll();
 </script>
-    <Container minW="70vw">
-    <Box borderRadius="lg" bg="#0e151a" p={10} w={"100%"} mh={"50vh"} mt={36} align="center">  
-      <Heading as="h3" fontSize={36} mb={8}>
+    <Container minW="90vw">
+    <Box borderRadius="lg" bg="#0e151a" p={10} w={"100%"} mh={"50vh"} mt={[0, 6]} align="center">  
+      <Heading as="h3" fontSize={[30, 48]} mb={{ base: 6}}>
         Code Snippets
       </Heading>
 
       <SimpleGrid columns={[1, 1, 1]} gap={6}>
       <Section  delay={0.1}>
           <Box w="100%">
-          <Text textColor={'#A82428'} my={5} fontSize={20}>
-            Deploy Cairo testnet-contract with Protostar snippet
+          <Text textColor={'#A82428'} my={5} fontSize={[16, 24]}>
+            Deploy Cairo testnet contract with Protostar snippet
           </Text>
             <Highlight   language="solidity" width="100%" className="css">
               {
@@ -48,8 +48,8 @@ func constructor{syscall_ptr: felt*, pedersen_ptr: HashBuiltin*, range_check_ptr
         </Section>
         <Section delay={0.1}>
           <Box w="100%">
-          <Text textColor={'#A82428'} my={5} fontSize={20}>
-            isSecured() - Modifier to prevent hostile contracts or exploits for minting.
+          <Text textColor={'#A82428'} my={5} fontSize={[16, 24]}>
+            isSecured() - Modifier to prevent hostile contracts or exploits for minting
           </Text>
             <Highlight language="solidity" width="100%" className="css">
               {
@@ -64,8 +64,8 @@ _; }`}
         </Section>
         <Section delay={0.1}>
           <Box w="100%">
-          <Text textColor={'#A82428'} my={5} fontSize={20}>
-            Batch minting - Release supply over time using batch mints.
+          <Text textColor={'#A82428'} my={5} fontSize={[16, 24]}>
+            Batch minting - Release supply over time using batch mints
           </Text>
             <Highlight language="solidity" width="100%" className="css">
               {
@@ -98,8 +98,8 @@ modifier mintCompliance(uint256 _mintAmount) {
         </Section>
         <Section delay={0.1}>
           <Box w="100%">
-          <Text textColor={'#A82428'} my={5} fontSize={20}>
-            Dynamic price - Function to check if price changes depending on mint amount.
+          <Text textColor={'#A82428'} my={5} fontSize={[16, 24]}>
+            Dynamic price - Function to check if price changes depending on mint amount
           </Text>
             <Highlight language="solidity" width="100%" className="css">
               {

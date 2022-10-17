@@ -37,11 +37,11 @@ const Navbar = props => {
 
   return (
     <Box
-      mt={12}
+      mt={[ 4, 16 ]}
       borderRadius="25px"
       as="nav"
-      width="50vw"
-      py={3}
+      width={[ "80vw", "50vw"]}
+      py={[0 , 2]}
       mx="auto"
       bg={useColorModeValue('#A82428', '#0e151a')}
       zIndex={2}
@@ -117,10 +117,11 @@ const Navbar = props => {
                 icon={<HamburgerIcon />}
                 variant="outline"
                 aria-label="Options"
+                mb={0}
               />
               <MenuList>
                 <Link href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
+                  <MenuItem as={Link}>Home</MenuItem>
                 </Link>
                 <Link href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>

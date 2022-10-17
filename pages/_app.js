@@ -8,7 +8,7 @@ import '../public/app.css'
 const Website = ({ Component, pageProps, router }) => {
   return (
     
-    <Chakra cookiers={pageProps.cookies}>
+    <Chakra cookies={pageProps.cookies}>
       <Layout router={router}>
         <Component {...pageProps} key={router.route}/>
       </Layout>
