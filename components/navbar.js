@@ -41,7 +41,7 @@ const Navbar = props => {
 
   return (
     <Box
-      mt={[ 4, 16 ]}
+      mt={[ 4, 10 ]}
       borderRadius="25px"
       as="nav"
       width={[ "80vw", "50vw"]}

@@ -21,7 +21,7 @@ const Page = () => {
         mb={6}
         mt={3}
         >
-          <Avatar display={{base: 'none', md : 'flex'}} background="#0e151a" p={1} mr={3} size='xxl' name='Chase Alber' src="https://i.imgur.com/zMLrNyP.jpeg" />
+          <Avatar display={{base: 'none', md : 'flex'}} h="10em" w="10em" background="#0e151a" p={1} mr={4} size='xxl' name='Chase Alber' src="https://i.imgur.com/vDg2giC.jpg" />
           <Paragraph>
           Chase is a 3D modeler, solidity wizard, and full-stack developer located
           out in the mountains of Montana. His interest spans wide and enjoys being able

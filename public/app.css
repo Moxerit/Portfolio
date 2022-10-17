@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: url("../public/images/bg.webp") no-repeat center center fixed !important;
+  background: #070b0d !important;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
