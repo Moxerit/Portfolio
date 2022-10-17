@@ -1,4 +1,6 @@
 import Logo from './logo'
+import NextLink from 'next/link'
+
 import {
   Container,
   Box,
@@ -18,8 +20,9 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('#A82428', '#A82428')
   return (
+    <NextLink href={href} passHref scroll={false}>
       <Link
-      href={href} passHref scroll={false}
+      href={href}
         p={2}
         bg={active ? '#A82428;' : undefined}
         color={active ? '#0e151a' : inactiveColor}
@@ -28,6 +31,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       >
         {children}
       </Link>
+      </NextLink>
 
   )
 }

@@ -13,7 +13,7 @@ const Page = () => {
   
   return (
     <Container minW="70vw" >
-      <Box borderRadius="lg" bg="#0e151a" p={10} pt={0} w={"100%"} mh={"30vh"} mt={36} align="center">
+      <Box borderRadius="lg" bg="#0e151a" p={10} w={"100%"} mh={"30vh"} mt={36} align="center">
         <Box 
         display="flex"
         textAlign="center"
